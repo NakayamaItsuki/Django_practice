@@ -1,0 +1,14 @@
+
+{% comment %} ヘッダー {% endcomment %}
+<h1>メモ一覧</h1>
+
+
+{% comment %} メモ一覧を表示する {% endcomment %}
+{% for memo in memos %}
+    <h3>{{ memo.title }}</h3>
+    <p>{{ memo.text }}</p>
+    {% comment %} <br> {% endcomment %}
+{% endfor %}
+
+
+
