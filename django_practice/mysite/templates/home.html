@@ -1,0 +1,95 @@
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ホームページ</title>
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#self-introduction">自己紹介</a></li>
+        <li><a href="#resume">経歴</a></li>
+        <li><a href="#papers">論文</a></li>
+        <li><a href="#research">研究分野</a></li>
+        <li><a href="#interests">興味</a></li>
+        <li><a href="#others">その他</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="self-introduction" class="section">
+    <h1>自己紹介</h1>
+    <div class="container">
+      <div class="profile-image">
+        <img src="{% static 'images/my_photo.png' %}" alt="自分の写真">
+      </div>
+      <div class="profile-details">
+        <h2>中山 樹</h2>
+        <p>ホラー映画，お笑いラジオ，シミュレーションRPGが好きです．</p>
+        <p>柴犬が好きで，SNSで毎日見ています．いつかは飼いたい．</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="resume" class="section">
+    <h1>経歴</h1>
+    <p>大阪大学工学部電子情報工学科　在学中</p>
+  </div>
+
+  <div id="papers" class="section">
+    <h1>論文</h1>
+    <p>...😭</p>
+  </div>
+
+  <div id="research" class="section">
+    <h1>研究分野</h1>
+    <p>グラフニューラルネットワークに興味があります．</p>
+  </div>
+
+  <div id="interests" class="section">
+    <h1>興味</h1>
+    <p>・ 機械学習</p>
+    <p>・自然言語処理</p>
+    <p>・グラフニューラルネットワーク</p>
+
+
+  <div id="others" class="section">
+    <h1>その他</h1>
+    {% comment %} <h2>読んだ/読んでいる本</h2> {% endcomment %}
+    {% comment %} <p> <a href= {% url '??' %} >ここ</a>にまとめています．</p> {% endcomment %}
+    <h2>自分が書いたもの</h2>
+    <p>・院試の勉強法...研究室内で公開</p>
+    <p>・<a href="https://qiita.com/snoo_py/items/d9ecefbc186ac46a67f3">GCNの解説記事</a>...グラフフーリエ変換から解説しています． </p>
+    <p>・メモ書きを<a href= {% url 'memo_list' %} >ここ</a>にまとめています．</p>
+    <p></p>
+
+    <h2>遊びで作ったもの</h2>
+    <p>・オート文字列カウンター...文字列を自動でカウントしてくれるサイト．pyscriptという技術を試すために作りました．</p>
+    <h3>　<a href="https://nakayamaitsuki.github.io/string_length_counter/">オート文字列カウンター</a></h3>
+    <p>　<a href="https://qiita.com/snoo_py/items/ef10375374aecee25c4d">PyScriptで超簡単なWebサービスを作ってみる</a>...ソースコードと共にQiitaに解説を載せました．</p>
+    <p>・Unityのゲーム...矢を避けるゲームやポーカー，リズムゲーなど．クオリティは😆</p>
+    <h3>　<a href="https://unityroom.com/users/goromanji">unityroom</a></h3>
+    <p></p>
+    <p>・DiscordのBOT</p>
+    <h3>　<a href="https://github.com/NakayamaItsuki/Random_Pokemon_BOT">Random_Pokemmon_BOT</a></h3>
+    <p></p>
+    <h3>　<a href="https://github.com/NakayamaItsuki/image_generation_BOT">画像生成BOT</a></h3>
+    
+    <p></p>
+
+  </div>
+
+
+  <footer>
+    <p>&copy; 2024 Nakayama Itsuki</p>
+  </footer>
+</body>
+</html>
