@@ -1,0 +1,5 @@
+# シェルに入る
+pipenv shell
+
+# シェルから抜ける
+deactivate
