@@ -7,3 +7,6 @@ def memo_list(request):
     memos = Memo.objects.all().order_by('id')
     return render(request, 'memo_list.html', {'memos': memos})
 
+def home(request):
+    # ホーム画面を表示するビュー
+    return render(request, 'home.html')
